@@ -80,22 +80,33 @@
             animation: fadeInDown 1.5s ease;
         }
 
-        /* Button Styling */
-        .button {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 25px;
-            font-size: 1em;
-            color: white;
-            background-color: #ffa45b;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            text-decoration: none;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, transform 0.2s;
-            animation: pop 1.5s ease infinite alternate;
-        }
+/* Updated Button Styling */
+.language-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 1em;
+    color: #fff;
+    background: linear-gradient(135deg, #42a5f5, #478ed1);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(66, 165, 245, 0.4);
+    transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+}
+
+.language-btn:hover {
+    background: linear-gradient(135deg, #478ed1, #5cb1f6);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(66, 165, 245, 0.6);
+}
+
+.language-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(66, 165, 245, 0.3);
+}
+
 
         .button:hover {
             background-color: #ff8e42;
